@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #0366d6;
+  --secondary-color: #28a745;
+  --background-color: #f6f8fa;
+  --text-color: #24292e;
+  --link-color: #0366d6;
+  --nav-bg: #24292e;
+  --nav-text: #ffffff;
+  --table-border: #e1e4e8;
+  --table-header-bg: #f1f8ff;
+  --button-primary-bg: #28a745;
+  --button-primary-text: white;
+  --button-secondary-bg: #0366d6;
+  --button-secondary-text: white;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: var(--nav-bg) !important;
+  padding: 1rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: var(--nav-text) !important;
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: var(--nav-text) !important;
+  margin: 0 1rem;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.table {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.table thead th {
+  background-color: var(--table-header-bg);
+  border-bottom: 2px solid var(--table-border);
+  color: var(--text-color);
+}
+
+.table td {
+  border-top: 1px solid var(--table-border);
+  padding: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--button-primary-bg) !important;
+  border-color: var(--button-primary-bg) !important;
+  color: var(--button-primary-text) !important;
+}
+
+.btn-secondary {
+  background-color: var(--button-secondary-bg) !important;
+  border-color: var(--button-secondary-bg) !important;
+  color: var(--button-secondary-text) !important;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 2rem 1rem;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.card-header {
+  background-color: var(--table-header-bg);
+  border-bottom: 1px solid var(--table-border);
+  padding: 1rem;
+}
+
+.logo-container {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+}
+
+.logo-small {
+  height: 40px;
+  width: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 0.5rem;
+  }
+  
+  .navbar-brand img {
+    height: 30px;
+  }
+}
